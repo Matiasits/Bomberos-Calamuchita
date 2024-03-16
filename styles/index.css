@@ -2,13 +2,14 @@
 
 /* Colores del logo */
 :root {
-    --primary-color: #d42823;   /* Rojo */
+    --primary-color: #13293d;   /* Azul marino */
     --secondary-color: #1da797; /* Verde */
     --tertiary-color: #e35e23;  /* Naranja */
     --quaternary-color: #252123; /* Negro */
     --gradient-colors: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
     background-image: var(--gradient-colors);
 }
+
 
 /* Navbar */
 .navbar {
@@ -17,10 +18,15 @@
 
 .navbar-brand img {
     max-height: 50px;
+    border-radius: 50%;
 }
 
 .navbar-nav .nav-link {
     color: white !important;
+}
+
+.navbar-toggler {
+    color: white; 
 }
 
 /* Carrusel */
