@@ -3,13 +3,12 @@
 /* Colores del logo */
 :root {
     --primary-color: #13293d;   /* Azul marino */
-    --secondary-color: #1da797; /* Verde */
+    --secondary-color: #ffffff; /* Verde */
     --tertiary-color: #e35e23;  /* Naranja */
     --quaternary-color: #252123; /* Negro */
     --gradient-colors: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
     background-image: var(--gradient-colors);
 }
-
 
 /* Navbar */
 .navbar {
@@ -30,16 +29,33 @@
 }
 
 /* Carrusel */
+.carousel {
+    width: 90%;
+    margin: auto auto 50px;
+
+}
+
 .carousel-item img {
-    height: 400px;
+    width: 100%; /* Establece un ancho del 100% para las imágenes */
+    height: 20%;
     object-fit: cover;
 }
 
 /* Secciones informativas */
 .info-section {
+    width: 85%;
+    margin: auto auto 50px;
     padding: 50px 0;
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid var(--primary-color); 
+    box-shadow: 20px 24px 28px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave a la sombra y al zoom */
+}
+
+.info-section:hover {
+    box-shadow: 20px 24px 38px rgba(0, 0, 0, 0.7); /* Cambia la sombra de caja al pasar el mouse */
+    transform: scale(1.05); /* Hace un pequeño zoom al pasar el mouse */
 }
 
 .info-section h2 {
@@ -64,7 +80,7 @@ footer {
     margin: 0 10px;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons li a i{
+    width: 100px;
+    height: 100px;
 }
