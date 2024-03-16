@@ -1,0 +1,64 @@
+/* Estilos personalizados para el cuartel de bomberos */
+
+/* Colores del logo */
+:root {
+    --primary-color: #d42823;   /* Rojo */
+    --secondary-color: #1da797; /* Verde */
+    --tertiary-color: #e35e23;  /* Naranja */
+    --quaternary-color: #252123; /* Negro */
+    --gradient-colors: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    background-image: var(--gradient-colors);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Secciones informativas */
+.info-section {
+    padding: 50px 0;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.info-section h2 {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
